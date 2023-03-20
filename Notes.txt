@@ -1,0 +1,20 @@
+8:29 AM 3/13/2023
+
+Todolist deployed to: 0xfeDEbdF22729fD7090a4687f368c7eC588edC78a
+
+
+const [user1] = await hre.ethers.getSigners() is a line of code that retrieves the first available signer from the Hardhat network.
+
+In Ethereum, a signer is an entity that has the ability to sign transactions and messages with their private key. A signer is typically a user or a smart contract.
+
+The getSigners() function is provided by the ethers.js library, which is a popular Ethereum development library. This function returns an array of Signer objects, which can be used to sign transactions and messages.
+
+In the code you provided, the first Signer object is destructured from the array and assigned to the variable user1. This variable can then be used to sign transactions and interact with the Ethereum network.
+
+Sure! In Ethereum, a signer is an entity that has the ability to sign transactions with their private key. A signer can be a user's wallet, a smart contract, or any other programmatic entity that has a private key.
+
+The private key is used to create a signature that is included in the transaction. This signature is used to verify that the transaction was indeed initiated by the signer and that the data in the transaction has not been tampered with.
+
+In a Dapp, a common use case for a signer is to allow the user to sign transactions with their own wallet. For example, if a user wants to buy a token on a DEX (decentralized exchange), they will need to sign the transaction that transfers their funds to the exchange and receives the tokens in return. By using a signer, the user can confirm the transaction and approve the transfer of funds from their wallet without needing to enter their private key on the Dapp's UI.
+
+In the code you provided, hre.ethers.getSigners() returns an array of signers that are available to interact with the network. The first element in this array (user1) is then used to interact with the contract.
